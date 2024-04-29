@@ -1,0 +1,13 @@
+﻿@model List<int>
+
+<div class="text-center">
+    <h1 class="display-4">App deployment GitHub</h1>
+    <h3 style="color:red">@ViewData["SALUDO"]</h3>
+    <img src="~/images/coches.png" style="width:150px;height:150px;" />
+    <ul class="list-group">
+        @foreach (int num in Model)
+        {
+            <li class="list-group-item">@num</li>
+        }
+    </ul>
+</div>
